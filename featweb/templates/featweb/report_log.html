@@ -1,0 +1,198 @@
+<HTML><HEAD>
+<!--refreshstart-->
+
+<!--refreshstop-->
+<link REL=stylesheet TYPE=text/css href=.files/fsl.css>
+<TITLE>FSL</TITLE></HEAD><BODY><OBJECT data=report.html></OBJECT>
+<h2>Progress Report / Log</h2>
+Started at Sun Jan 17 18:21:35 CST 2016<p>
+Feat main script<br><pre>
+
+/bin/cp /home/jiaxinyu/SS2016/v509/fsf/cope4.fsf design.fsf
+
+/usr/local/fsl/bin/feat_model design
+
+mkdir .files;cp /usr/local/fsl/doc/fsl.css .files;cp -r /usr/local/fsl/doc/images .files/images
+
+/usr/local/fsl/bin/fsl_sub -T 60 -l logs -N feat2_pre   /usr/local/fsl/bin/feat /home/jiaxinyu/SS2016/v509/3rd/cope4.gfeat/design.fsf -D /home/jiaxinyu/SS2016/v509/3rd/cope4.gfeat -gfeatprep
+91774
+
+/usr/local/fsl/bin/fsl_sub -T 60 -l logs -N feat3a_flame -j 91774  /usr/local/fsl/bin/feat /home/jiaxinyu/SS2016/v509/3rd/cope4.gfeat/cope1.feat/design.fsf -D /home/jiaxinyu/SS2016/v509/3rd/cope4.gfeat/cope1.feat -I 1 -flame1
+76806
+
+/usr/local/fsl/bin/fsl_sub -T 60 -l logs -N feat3b_flame -j 76806 -t ./.flame
+98588
+
+/usr/local/fsl/bin/fsl_sub -T 60 -l logs -N feat3c_flame -j 98588  /usr/local/fsl/bin/feat /home/jiaxinyu/SS2016/v509/3rd/cope4.gfeat/cope1.feat/design.fsf -D /home/jiaxinyu/SS2016/v509/3rd/cope4.gfeat/cope1.feat -flame3
+136410
+
+/usr/local/fsl/bin/fsl_sub -T 60 -l logs -N feat4_post -j 136410  /usr/local/fsl/bin/feat /home/jiaxinyu/SS2016/v509/3rd/cope4.gfeat/cope1.feat/design.fsf -D /home/jiaxinyu/SS2016/v509/3rd/cope4.gfeat/cope1.feat -poststats 1
+142714
+
+/usr/local/fsl/bin/fsl_sub -T 1 -l logs -N feat5_stop -j 142714  /usr/local/fsl/bin/feat /home/jiaxinyu/SS2016/v509/3rd/cope4.gfeat/cope1.feat/design.fsf -D /home/jiaxinyu/SS2016/v509/3rd/cope4.gfeat/cope1.feat -stop
+763
+
+/usr/local/fsl/bin/fsl_sub -T 60 -l logs -N feat3a_flame -j 91774  /usr/local/fsl/bin/feat /home/jiaxinyu/SS2016/v509/3rd/cope4.gfeat/cope2.feat/design.fsf -D /home/jiaxinyu/SS2016/v509/3rd/cope4.gfeat/cope2.feat -I 2 -flame1
+1958
+
+/usr/local/fsl/bin/fsl_sub -T 60 -l logs -N feat3b_flame -j 1958 -t ./.flame
+10057
+
+/usr/local/fsl/bin/fsl_sub -T 60 -l logs -N feat3c_flame -j 10057  /usr/local/fsl/bin/feat /home/jiaxinyu/SS2016/v509/3rd/cope4.gfeat/cope2.feat/design.fsf -D /home/jiaxinyu/SS2016/v509/3rd/cope4.gfeat/cope2.feat -flame3
+54609
+
+/usr/local/fsl/bin/fsl_sub -T 60 -l logs -N feat4_post -j 54609  /usr/local/fsl/bin/feat /home/jiaxinyu/SS2016/v509/3rd/cope4.gfeat/cope2.feat/design.fsf -D /home/jiaxinyu/SS2016/v509/3rd/cope4.gfeat/cope2.feat -poststats 1
+61627
+
+/usr/local/fsl/bin/fsl_sub -T 1 -l logs -N feat5_stop -j 61627  /usr/local/fsl/bin/feat /home/jiaxinyu/SS2016/v509/3rd/cope4.gfeat/cope2.feat/design.fsf -D /home/jiaxinyu/SS2016/v509/3rd/cope4.gfeat/cope2.feat -stop
+67417
+
+/usr/local/fsl/bin/fsl_sub -T 60 -l logs -N feat3a_flame -j 91774  /usr/local/fsl/bin/feat /home/jiaxinyu/SS2016/v509/3rd/cope4.gfeat/cope3.feat/design.fsf -D /home/jiaxinyu/SS2016/v509/3rd/cope4.gfeat/cope3.feat -I 3 -flame1
+68772
+
+/usr/local/fsl/bin/fsl_sub -T 60 -l logs -N feat3b_flame -j 68772 -t ./.flame
+77078
+
+/usr/local/fsl/bin/fsl_sub -T 60 -l logs -N feat3c_flame -j 77078  /usr/local/fsl/bin/feat /home/jiaxinyu/SS2016/v509/3rd/cope4.gfeat/cope3.feat/design.fsf -D /home/jiaxinyu/SS2016/v509/3rd/cope4.gfeat/cope3.feat -flame3
+93742
+
+/usr/local/fsl/bin/fsl_sub -T 60 -l logs -N feat4_post -j 93742  /usr/local/fsl/bin/feat /home/jiaxinyu/SS2016/v509/3rd/cope4.gfeat/cope3.feat/design.fsf -D /home/jiaxinyu/SS2016/v509/3rd/cope4.gfeat/cope3.feat -poststats 1
+100434
+
+/usr/local/fsl/bin/fsl_sub -T 1 -l logs -N feat5_stop -j 100434  /usr/local/fsl/bin/feat /home/jiaxinyu/SS2016/v509/3rd/cope4.gfeat/cope3.feat/design.fsf -D /home/jiaxinyu/SS2016/v509/3rd/cope4.gfeat/cope3.feat -stop
+105237
+
+/usr/local/fsl/bin/fsl_sub -T 60 -l logs -N feat3a_flame -j 91774  /usr/local/fsl/bin/feat /home/jiaxinyu/SS2016/v509/3rd/cope4.gfeat/cope4.feat/design.fsf -D /home/jiaxinyu/SS2016/v509/3rd/cope4.gfeat/cope4.feat -I 4 -flame1
+106764
+
+/usr/local/fsl/bin/fsl_sub -T 60 -l logs -N feat3b_flame -j 106764 -t ./.flame
+115319
+
+/usr/local/fsl/bin/fsl_sub -T 60 -l logs -N feat3c_flame -j 115319  /usr/local/fsl/bin/feat /home/jiaxinyu/SS2016/v509/3rd/cope4.gfeat/cope4.feat/design.fsf -D /home/jiaxinyu/SS2016/v509/3rd/cope4.gfeat/cope4.feat -flame3
+121954
+
+/usr/local/fsl/bin/fsl_sub -T 60 -l logs -N feat4_post -j 121954  /usr/local/fsl/bin/feat /home/jiaxinyu/SS2016/v509/3rd/cope4.gfeat/cope4.feat/design.fsf -D /home/jiaxinyu/SS2016/v509/3rd/cope4.gfeat/cope4.feat -poststats 1
+134600
+
+/usr/local/fsl/bin/fsl_sub -T 1 -l logs -N feat5_stop -j 134600  /usr/local/fsl/bin/feat /home/jiaxinyu/SS2016/v509/3rd/cope4.gfeat/cope4.feat/design.fsf -D /home/jiaxinyu/SS2016/v509/3rd/cope4.gfeat/cope4.feat -stop
+141964
+
+/usr/local/fsl/bin/fsl_sub -T 1 -l logs -N feat5_stop -j 763,67417,105237,141964  /usr/local/fsl/bin/feat /home/jiaxinyu/SS2016/v509/3rd/cope4.gfeat/cope4.feat/design.fsf -D /home/jiaxinyu/SS2016/v509/3rd/cope4.gfeat -stop
+</pre><hr>Higher-level input files preparation<br><pre>
+
+/usr/local/fsl/bin/featregapply /home/jiaxinyu/SS2016/v509/2nd/101.gfeat/cope4.feat
+
+/usr/local/fsl/bin/featregapply /home/jiaxinyu/SS2016/v509/2nd/102.gfeat/cope4.feat
+
+/usr/local/fsl/bin/featregapply /home/jiaxinyu/SS2016/v509/2nd/103.gfeat/cope4.feat
+
+/usr/local/fsl/bin/featregapply /home/jiaxinyu/SS2016/v509/2nd/104.gfeat/cope4.feat
+
+/usr/local/fsl/bin/featregapply /home/jiaxinyu/SS2016/v509/2nd/105.gfeat/cope4.feat
+
+/usr/local/fsl/bin/featregapply /home/jiaxinyu/SS2016/v509/2nd/106.gfeat/cope4.feat
+
+/usr/local/fsl/bin/featregapply /home/jiaxinyu/SS2016/v509/2nd/107.gfeat/cope4.feat
+
+/usr/local/fsl/bin/featregapply /home/jiaxinyu/SS2016/v509/2nd/108.gfeat/cope4.feat
+
+/usr/local/fsl/bin/featregapply /home/jiaxinyu/SS2016/v509/2nd/109.gfeat/cope4.feat
+
+/usr/local/fsl/bin/featregapply /home/jiaxinyu/SS2016/v509/2nd/110.gfeat/cope4.feat
+
+/usr/local/fsl/bin/featregapply /home/jiaxinyu/SS2016/v509/2nd/111.gfeat/cope4.feat
+
+/usr/local/fsl/bin/featregapply /home/jiaxinyu/SS2016/v509/2nd/112.gfeat/cope4.feat
+
+/usr/local/fsl/bin/featregapply /home/jiaxinyu/SS2016/v509/2nd/113.gfeat/cope4.feat
+
+/usr/local/fsl/bin/featregapply /home/jiaxinyu/SS2016/v509/2nd/114.gfeat/cope4.feat
+
+/usr/local/fsl/bin/featregapply /home/jiaxinyu/SS2016/v509/2nd/201.gfeat/cope4.feat
+
+/usr/local/fsl/bin/featregapply /home/jiaxinyu/SS2016/v509/2nd/202.gfeat/cope4.feat
+
+/usr/local/fsl/bin/featregapply /home/jiaxinyu/SS2016/v509/2nd/203.gfeat/cope4.feat
+
+/usr/local/fsl/bin/featregapply /home/jiaxinyu/SS2016/v509/2nd/204.gfeat/cope4.feat
+
+/usr/local/fsl/bin/featregapply /home/jiaxinyu/SS2016/v509/2nd/205.gfeat/cope4.feat
+
+/usr/local/fsl/bin/featregapply /home/jiaxinyu/SS2016/v509/2nd/206.gfeat/cope4.feat
+
+/usr/local/fsl/bin/featregapply /home/jiaxinyu/SS2016/v509/2nd/207.gfeat/cope4.feat
+
+/usr/local/fsl/bin/featregapply /home/jiaxinyu/SS2016/v509/2nd/208.gfeat/cope4.feat
+
+/usr/local/fsl/bin/featregapply /home/jiaxinyu/SS2016/v509/2nd/209.gfeat/cope4.feat
+
+/usr/local/fsl/bin/featregapply /home/jiaxinyu/SS2016/v509/2nd/210.gfeat/cope4.feat
+
+/usr/local/fsl/bin/fslmerge -t bg_image  /home/jiaxinyu/SS2016/v509/2nd/101.gfeat/cope4.feat/example_func /home/jiaxinyu/SS2016/v509/2nd/102.gfeat/cope4.feat/example_func /home/jiaxinyu/SS2016/v509/2nd/103.gfeat/cope4.feat/example_func /home/jiaxinyu/SS2016/v509/2nd/104.gfeat/cope4.feat/example_func /home/jiaxinyu/SS2016/v509/2nd/105.gfeat/cope4.feat/example_func /home/jiaxinyu/SS2016/v509/2nd/106.gfeat/cope4.feat/example_func /home/jiaxinyu/SS2016/v509/2nd/107.gfeat/cope4.feat/example_func /home/jiaxinyu/SS2016/v509/2nd/108.gfeat/cope4.feat/example_func /home/jiaxinyu/SS2016/v509/2nd/109.gfeat/cope4.feat/example_func /home/jiaxinyu/SS2016/v509/2nd/110.gfeat/cope4.feat/example_func /home/jiaxinyu/SS2016/v509/2nd/111.gfeat/cope4.feat/example_func /home/jiaxinyu/SS2016/v509/2nd/112.gfeat/cope4.feat/example_func /home/jiaxinyu/SS2016/v509/2nd/113.gfeat/cope4.feat/example_func /home/jiaxinyu/SS2016/v509/2nd/114.gfeat/cope4.feat/example_func /home/jiaxinyu/SS2016/v509/2nd/201.gfeat/cope4.feat/example_func /home/jiaxinyu/SS2016/v509/2nd/202.gfeat/cope4.feat/example_func /home/jiaxinyu/SS2016/v509/2nd/203.gfeat/cope4.feat/example_func /home/jiaxinyu/SS2016/v509/2nd/204.gfeat/cope4.feat/example_func /home/jiaxinyu/SS2016/v509/2nd/205.gfeat/cope4.feat/example_func /home/jiaxinyu/SS2016/v509/2nd/206.gfeat/cope4.feat/example_func /home/jiaxinyu/SS2016/v509/2nd/207.gfeat/cope4.feat/example_func /home/jiaxinyu/SS2016/v509/2nd/208.gfeat/cope4.feat/example_func /home/jiaxinyu/SS2016/v509/2nd/209.gfeat/cope4.feat/example_func /home/jiaxinyu/SS2016/v509/2nd/210.gfeat/cope4.feat/example_func
+
+/usr/local/fsl/bin/fslmaths bg_image -inm 1000 -Tmean bg_image -odt float
+
+/usr/local/fsl/bin/fslmerge -t mask  /home/jiaxinyu/SS2016/v509/2nd/101.gfeat/cope4.feat/mask /home/jiaxinyu/SS2016/v509/2nd/102.gfeat/cope4.feat/mask /home/jiaxinyu/SS2016/v509/2nd/103.gfeat/cope4.feat/mask /home/jiaxinyu/SS2016/v509/2nd/104.gfeat/cope4.feat/mask /home/jiaxinyu/SS2016/v509/2nd/105.gfeat/cope4.feat/mask /home/jiaxinyu/SS2016/v509/2nd/106.gfeat/cope4.feat/mask /home/jiaxinyu/SS2016/v509/2nd/107.gfeat/cope4.feat/mask /home/jiaxinyu/SS2016/v509/2nd/108.gfeat/cope4.feat/mask /home/jiaxinyu/SS2016/v509/2nd/109.gfeat/cope4.feat/mask /home/jiaxinyu/SS2016/v509/2nd/110.gfeat/cope4.feat/mask /home/jiaxinyu/SS2016/v509/2nd/111.gfeat/cope4.feat/mask /home/jiaxinyu/SS2016/v509/2nd/112.gfeat/cope4.feat/mask /home/jiaxinyu/SS2016/v509/2nd/113.gfeat/cope4.feat/mask /home/jiaxinyu/SS2016/v509/2nd/114.gfeat/cope4.feat/mask /home/jiaxinyu/SS2016/v509/2nd/201.gfeat/cope4.feat/mask /home/jiaxinyu/SS2016/v509/2nd/202.gfeat/cope4.feat/mask /home/jiaxinyu/SS2016/v509/2nd/203.gfeat/cope4.feat/mask /home/jiaxinyu/SS2016/v509/2nd/204.gfeat/cope4.feat/mask /home/jiaxinyu/SS2016/v509/2nd/205.gfeat/cope4.feat/mask /home/jiaxinyu/SS2016/v509/2nd/206.gfeat/cope4.feat/mask /home/jiaxinyu/SS2016/v509/2nd/207.gfeat/cope4.feat/mask /home/jiaxinyu/SS2016/v509/2nd/208.gfeat/cope4.feat/mask /home/jiaxinyu/SS2016/v509/2nd/209.gfeat/cope4.feat/mask /home/jiaxinyu/SS2016/v509/2nd/210.gfeat/cope4.feat/mask
+
+/usr/local/fsl/bin/fslmaths mask -Tmin mask
+
+/usr/local/fsl/bin/fslmerge -t mean_func  /home/jiaxinyu/SS2016/v509/2nd/101.gfeat/cope4.feat/mean_func /home/jiaxinyu/SS2016/v509/2nd/102.gfeat/cope4.feat/mean_func /home/jiaxinyu/SS2016/v509/2nd/103.gfeat/cope4.feat/mean_func /home/jiaxinyu/SS2016/v509/2nd/104.gfeat/cope4.feat/mean_func /home/jiaxinyu/SS2016/v509/2nd/105.gfeat/cope4.feat/mean_func /home/jiaxinyu/SS2016/v509/2nd/106.gfeat/cope4.feat/mean_func /home/jiaxinyu/SS2016/v509/2nd/107.gfeat/cope4.feat/mean_func /home/jiaxinyu/SS2016/v509/2nd/108.gfeat/cope4.feat/mean_func /home/jiaxinyu/SS2016/v509/2nd/109.gfeat/cope4.feat/mean_func /home/jiaxinyu/SS2016/v509/2nd/110.gfeat/cope4.feat/mean_func /home/jiaxinyu/SS2016/v509/2nd/111.gfeat/cope4.feat/mean_func /home/jiaxinyu/SS2016/v509/2nd/112.gfeat/cope4.feat/mean_func /home/jiaxinyu/SS2016/v509/2nd/113.gfeat/cope4.feat/mean_func /home/jiaxinyu/SS2016/v509/2nd/114.gfeat/cope4.feat/mean_func /home/jiaxinyu/SS2016/v509/2nd/201.gfeat/cope4.feat/mean_func /home/jiaxinyu/SS2016/v509/2nd/202.gfeat/cope4.feat/mean_func /home/jiaxinyu/SS2016/v509/2nd/203.gfeat/cope4.feat/mean_func /home/jiaxinyu/SS2016/v509/2nd/204.gfeat/cope4.feat/mean_func /home/jiaxinyu/SS2016/v509/2nd/205.gfeat/cope4.feat/mean_func /home/jiaxinyu/SS2016/v509/2nd/206.gfeat/cope4.feat/mean_func /home/jiaxinyu/SS2016/v509/2nd/207.gfeat/cope4.feat/mean_func /home/jiaxinyu/SS2016/v509/2nd/208.gfeat/cope4.feat/mean_func /home/jiaxinyu/SS2016/v509/2nd/209.gfeat/cope4.feat/mean_func /home/jiaxinyu/SS2016/v509/2nd/210.gfeat/cope4.feat/mean_func
+
+/usr/local/fsl/bin/fslmaths mean_func -Tmean mean_func
+
+/usr/local/fsl/bin/fslmerge -t cope1  /home/jiaxinyu/SS2016/v509/2nd/101.gfeat/cope4.feat/stats/cope1 /home/jiaxinyu/SS2016/v509/2nd/102.gfeat/cope4.feat/stats/cope1 /home/jiaxinyu/SS2016/v509/2nd/103.gfeat/cope4.feat/stats/cope1 /home/jiaxinyu/SS2016/v509/2nd/104.gfeat/cope4.feat/stats/cope1 /home/jiaxinyu/SS2016/v509/2nd/105.gfeat/cope4.feat/stats/cope1 /home/jiaxinyu/SS2016/v509/2nd/106.gfeat/cope4.feat/stats/cope1 /home/jiaxinyu/SS2016/v509/2nd/107.gfeat/cope4.feat/stats/cope1 /home/jiaxinyu/SS2016/v509/2nd/108.gfeat/cope4.feat/stats/cope1 /home/jiaxinyu/SS2016/v509/2nd/109.gfeat/cope4.feat/stats/cope1 /home/jiaxinyu/SS2016/v509/2nd/110.gfeat/cope4.feat/stats/cope1 /home/jiaxinyu/SS2016/v509/2nd/111.gfeat/cope4.feat/stats/cope1 /home/jiaxinyu/SS2016/v509/2nd/112.gfeat/cope4.feat/stats/cope1 /home/jiaxinyu/SS2016/v509/2nd/113.gfeat/cope4.feat/stats/cope1 /home/jiaxinyu/SS2016/v509/2nd/114.gfeat/cope4.feat/stats/cope1 /home/jiaxinyu/SS2016/v509/2nd/201.gfeat/cope4.feat/stats/cope1 /home/jiaxinyu/SS2016/v509/2nd/202.gfeat/cope4.feat/stats/cope1 /home/jiaxinyu/SS2016/v509/2nd/203.gfeat/cope4.feat/stats/cope1 /home/jiaxinyu/SS2016/v509/2nd/204.gfeat/cope4.feat/stats/cope1 /home/jiaxinyu/SS2016/v509/2nd/205.gfeat/cope4.feat/stats/cope1 /home/jiaxinyu/SS2016/v509/2nd/206.gfeat/cope4.feat/stats/cope1 /home/jiaxinyu/SS2016/v509/2nd/207.gfeat/cope4.feat/stats/cope1 /home/jiaxinyu/SS2016/v509/2nd/208.gfeat/cope4.feat/stats/cope1 /home/jiaxinyu/SS2016/v509/2nd/209.gfeat/cope4.feat/stats/cope1 /home/jiaxinyu/SS2016/v509/2nd/210.gfeat/cope4.feat/stats/cope1
+
+/usr/local/fsl/bin/fslmaths cope1 -mas mask cope1
+
+printf '0.180220630555 ' >> design.lcon
+
+/usr/local/fsl/bin/fslmerge -t varcope1  /home/jiaxinyu/SS2016/v509/2nd/101.gfeat/cope4.feat/stats/varcope1 /home/jiaxinyu/SS2016/v509/2nd/102.gfeat/cope4.feat/stats/varcope1 /home/jiaxinyu/SS2016/v509/2nd/103.gfeat/cope4.feat/stats/varcope1 /home/jiaxinyu/SS2016/v509/2nd/104.gfeat/cope4.feat/stats/varcope1 /home/jiaxinyu/SS2016/v509/2nd/105.gfeat/cope4.feat/stats/varcope1 /home/jiaxinyu/SS2016/v509/2nd/106.gfeat/cope4.feat/stats/varcope1 /home/jiaxinyu/SS2016/v509/2nd/107.gfeat/cope4.feat/stats/varcope1 /home/jiaxinyu/SS2016/v509/2nd/108.gfeat/cope4.feat/stats/varcope1 /home/jiaxinyu/SS2016/v509/2nd/109.gfeat/cope4.feat/stats/varcope1 /home/jiaxinyu/SS2016/v509/2nd/110.gfeat/cope4.feat/stats/varcope1 /home/jiaxinyu/SS2016/v509/2nd/111.gfeat/cope4.feat/stats/varcope1 /home/jiaxinyu/SS2016/v509/2nd/112.gfeat/cope4.feat/stats/varcope1 /home/jiaxinyu/SS2016/v509/2nd/113.gfeat/cope4.feat/stats/varcope1 /home/jiaxinyu/SS2016/v509/2nd/114.gfeat/cope4.feat/stats/varcope1 /home/jiaxinyu/SS2016/v509/2nd/201.gfeat/cope4.feat/stats/varcope1 /home/jiaxinyu/SS2016/v509/2nd/202.gfeat/cope4.feat/stats/varcope1 /home/jiaxinyu/SS2016/v509/2nd/203.gfeat/cope4.feat/stats/varcope1 /home/jiaxinyu/SS2016/v509/2nd/204.gfeat/cope4.feat/stats/varcope1 /home/jiaxinyu/SS2016/v509/2nd/205.gfeat/cope4.feat/stats/varcope1 /home/jiaxinyu/SS2016/v509/2nd/206.gfeat/cope4.feat/stats/varcope1 /home/jiaxinyu/SS2016/v509/2nd/207.gfeat/cope4.feat/stats/varcope1 /home/jiaxinyu/SS2016/v509/2nd/208.gfeat/cope4.feat/stats/varcope1 /home/jiaxinyu/SS2016/v509/2nd/209.gfeat/cope4.feat/stats/varcope1 /home/jiaxinyu/SS2016/v509/2nd/210.gfeat/cope4.feat/stats/varcope1
+
+/usr/local/fsl/bin/fslmaths varcope1 -mas mask varcope1
+
+/usr/local/fsl/bin/fslmerge -t tdof_t1  /home/jiaxinyu/SS2016/v509/2nd/101.gfeat/cope4.feat/stats/tdof_t1 /home/jiaxinyu/SS2016/v509/2nd/102.gfeat/cope4.feat/stats/tdof_t1 /home/jiaxinyu/SS2016/v509/2nd/103.gfeat/cope4.feat/stats/tdof_t1 /home/jiaxinyu/SS2016/v509/2nd/104.gfeat/cope4.feat/stats/tdof_t1 /home/jiaxinyu/SS2016/v509/2nd/105.gfeat/cope4.feat/stats/tdof_t1 /home/jiaxinyu/SS2016/v509/2nd/106.gfeat/cope4.feat/stats/tdof_t1 /home/jiaxinyu/SS2016/v509/2nd/107.gfeat/cope4.feat/stats/tdof_t1 /home/jiaxinyu/SS2016/v509/2nd/108.gfeat/cope4.feat/stats/tdof_t1 /home/jiaxinyu/SS2016/v509/2nd/109.gfeat/cope4.feat/stats/tdof_t1 /home/jiaxinyu/SS2016/v509/2nd/110.gfeat/cope4.feat/stats/tdof_t1 /home/jiaxinyu/SS2016/v509/2nd/111.gfeat/cope4.feat/stats/tdof_t1 /home/jiaxinyu/SS2016/v509/2nd/112.gfeat/cope4.feat/stats/tdof_t1 /home/jiaxinyu/SS2016/v509/2nd/113.gfeat/cope4.feat/stats/tdof_t1 /home/jiaxinyu/SS2016/v509/2nd/114.gfeat/cope4.feat/stats/tdof_t1 /home/jiaxinyu/SS2016/v509/2nd/201.gfeat/cope4.feat/stats/tdof_t1 /home/jiaxinyu/SS2016/v509/2nd/202.gfeat/cope4.feat/stats/tdof_t1 /home/jiaxinyu/SS2016/v509/2nd/203.gfeat/cope4.feat/stats/tdof_t1 /home/jiaxinyu/SS2016/v509/2nd/204.gfeat/cope4.feat/stats/tdof_t1 /home/jiaxinyu/SS2016/v509/2nd/205.gfeat/cope4.feat/stats/tdof_t1 /home/jiaxinyu/SS2016/v509/2nd/206.gfeat/cope4.feat/stats/tdof_t1 /home/jiaxinyu/SS2016/v509/2nd/207.gfeat/cope4.feat/stats/tdof_t1 /home/jiaxinyu/SS2016/v509/2nd/208.gfeat/cope4.feat/stats/tdof_t1 /home/jiaxinyu/SS2016/v509/2nd/209.gfeat/cope4.feat/stats/tdof_t1 /home/jiaxinyu/SS2016/v509/2nd/210.gfeat/cope4.feat/stats/tdof_t1
+
+/usr/local/fsl/bin/fslmaths tdof_t1 -mas mask tdof_t1
+
+/usr/local/fsl/bin/fslmerge -t cope2  /home/jiaxinyu/SS2016/v509/2nd/101.gfeat/cope4.feat/stats/cope2 /home/jiaxinyu/SS2016/v509/2nd/102.gfeat/cope4.feat/stats/cope2 /home/jiaxinyu/SS2016/v509/2nd/103.gfeat/cope4.feat/stats/cope2 /home/jiaxinyu/SS2016/v509/2nd/104.gfeat/cope4.feat/stats/cope2 /home/jiaxinyu/SS2016/v509/2nd/105.gfeat/cope4.feat/stats/cope2 /home/jiaxinyu/SS2016/v509/2nd/106.gfeat/cope4.feat/stats/cope2 /home/jiaxinyu/SS2016/v509/2nd/107.gfeat/cope4.feat/stats/cope2 /home/jiaxinyu/SS2016/v509/2nd/108.gfeat/cope4.feat/stats/cope2 /home/jiaxinyu/SS2016/v509/2nd/109.gfeat/cope4.feat/stats/cope2 /home/jiaxinyu/SS2016/v509/2nd/110.gfeat/cope4.feat/stats/cope2 /home/jiaxinyu/SS2016/v509/2nd/111.gfeat/cope4.feat/stats/cope2 /home/jiaxinyu/SS2016/v509/2nd/112.gfeat/cope4.feat/stats/cope2 /home/jiaxinyu/SS2016/v509/2nd/113.gfeat/cope4.feat/stats/cope2 /home/jiaxinyu/SS2016/v509/2nd/114.gfeat/cope4.feat/stats/cope2 /home/jiaxinyu/SS2016/v509/2nd/201.gfeat/cope4.feat/stats/cope2 /home/jiaxinyu/SS2016/v509/2nd/202.gfeat/cope4.feat/stats/cope2 /home/jiaxinyu/SS2016/v509/2nd/203.gfeat/cope4.feat/stats/cope2 /home/jiaxinyu/SS2016/v509/2nd/204.gfeat/cope4.feat/stats/cope2 /home/jiaxinyu/SS2016/v509/2nd/205.gfeat/cope4.feat/stats/cope2 /home/jiaxinyu/SS2016/v509/2nd/206.gfeat/cope4.feat/stats/cope2 /home/jiaxinyu/SS2016/v509/2nd/207.gfeat/cope4.feat/stats/cope2 /home/jiaxinyu/SS2016/v509/2nd/208.gfeat/cope4.feat/stats/cope2 /home/jiaxinyu/SS2016/v509/2nd/209.gfeat/cope4.feat/stats/cope2 /home/jiaxinyu/SS2016/v509/2nd/210.gfeat/cope4.feat/stats/cope2
+
+/usr/local/fsl/bin/fslmaths cope2 -mas mask cope2
+
+printf '0.180220630555 ' >> design.lcon
+
+/usr/local/fsl/bin/fslmerge -t varcope2  /home/jiaxinyu/SS2016/v509/2nd/101.gfeat/cope4.feat/stats/varcope2 /home/jiaxinyu/SS2016/v509/2nd/102.gfeat/cope4.feat/stats/varcope2 /home/jiaxinyu/SS2016/v509/2nd/103.gfeat/cope4.feat/stats/varcope2 /home/jiaxinyu/SS2016/v509/2nd/104.gfeat/cope4.feat/stats/varcope2 /home/jiaxinyu/SS2016/v509/2nd/105.gfeat/cope4.feat/stats/varcope2 /home/jiaxinyu/SS2016/v509/2nd/106.gfeat/cope4.feat/stats/varcope2 /home/jiaxinyu/SS2016/v509/2nd/107.gfeat/cope4.feat/stats/varcope2 /home/jiaxinyu/SS2016/v509/2nd/108.gfeat/cope4.feat/stats/varcope2 /home/jiaxinyu/SS2016/v509/2nd/109.gfeat/cope4.feat/stats/varcope2 /home/jiaxinyu/SS2016/v509/2nd/110.gfeat/cope4.feat/stats/varcope2 /home/jiaxinyu/SS2016/v509/2nd/111.gfeat/cope4.feat/stats/varcope2 /home/jiaxinyu/SS2016/v509/2nd/112.gfeat/cope4.feat/stats/varcope2 /home/jiaxinyu/SS2016/v509/2nd/113.gfeat/cope4.feat/stats/varcope2 /home/jiaxinyu/SS2016/v509/2nd/114.gfeat/cope4.feat/stats/varcope2 /home/jiaxinyu/SS2016/v509/2nd/201.gfeat/cope4.feat/stats/varcope2 /home/jiaxinyu/SS2016/v509/2nd/202.gfeat/cope4.feat/stats/varcope2 /home/jiaxinyu/SS2016/v509/2nd/203.gfeat/cope4.feat/stats/varcope2 /home/jiaxinyu/SS2016/v509/2nd/204.gfeat/cope4.feat/stats/varcope2 /home/jiaxinyu/SS2016/v509/2nd/205.gfeat/cope4.feat/stats/varcope2 /home/jiaxinyu/SS2016/v509/2nd/206.gfeat/cope4.feat/stats/varcope2 /home/jiaxinyu/SS2016/v509/2nd/207.gfeat/cope4.feat/stats/varcope2 /home/jiaxinyu/SS2016/v509/2nd/208.gfeat/cope4.feat/stats/varcope2 /home/jiaxinyu/SS2016/v509/2nd/209.gfeat/cope4.feat/stats/varcope2 /home/jiaxinyu/SS2016/v509/2nd/210.gfeat/cope4.feat/stats/varcope2
+
+/usr/local/fsl/bin/fslmaths varcope2 -mas mask varcope2
+
+/usr/local/fsl/bin/fslmerge -t tdof_t2  /home/jiaxinyu/SS2016/v509/2nd/101.gfeat/cope4.feat/stats/tdof_t2 /home/jiaxinyu/SS2016/v509/2nd/102.gfeat/cope4.feat/stats/tdof_t2 /home/jiaxinyu/SS2016/v509/2nd/103.gfeat/cope4.feat/stats/tdof_t2 /home/jiaxinyu/SS2016/v509/2nd/104.gfeat/cope4.feat/stats/tdof_t2 /home/jiaxinyu/SS2016/v509/2nd/105.gfeat/cope4.feat/stats/tdof_t2 /home/jiaxinyu/SS2016/v509/2nd/106.gfeat/cope4.feat/stats/tdof_t2 /home/jiaxinyu/SS2016/v509/2nd/107.gfeat/cope4.feat/stats/tdof_t2 /home/jiaxinyu/SS2016/v509/2nd/108.gfeat/cope4.feat/stats/tdof_t2 /home/jiaxinyu/SS2016/v509/2nd/109.gfeat/cope4.feat/stats/tdof_t2 /home/jiaxinyu/SS2016/v509/2nd/110.gfeat/cope4.feat/stats/tdof_t2 /home/jiaxinyu/SS2016/v509/2nd/111.gfeat/cope4.feat/stats/tdof_t2 /home/jiaxinyu/SS2016/v509/2nd/112.gfeat/cope4.feat/stats/tdof_t2 /home/jiaxinyu/SS2016/v509/2nd/113.gfeat/cope4.feat/stats/tdof_t2 /home/jiaxinyu/SS2016/v509/2nd/114.gfeat/cope4.feat/stats/tdof_t2 /home/jiaxinyu/SS2016/v509/2nd/201.gfeat/cope4.feat/stats/tdof_t2 /home/jiaxinyu/SS2016/v509/2nd/202.gfeat/cope4.feat/stats/tdof_t2 /home/jiaxinyu/SS2016/v509/2nd/203.gfeat/cope4.feat/stats/tdof_t2 /home/jiaxinyu/SS2016/v509/2nd/204.gfeat/cope4.feat/stats/tdof_t2 /home/jiaxinyu/SS2016/v509/2nd/205.gfeat/cope4.feat/stats/tdof_t2 /home/jiaxinyu/SS2016/v509/2nd/206.gfeat/cope4.feat/stats/tdof_t2 /home/jiaxinyu/SS2016/v509/2nd/207.gfeat/cope4.feat/stats/tdof_t2 /home/jiaxinyu/SS2016/v509/2nd/208.gfeat/cope4.feat/stats/tdof_t2 /home/jiaxinyu/SS2016/v509/2nd/209.gfeat/cope4.feat/stats/tdof_t2 /home/jiaxinyu/SS2016/v509/2nd/210.gfeat/cope4.feat/stats/tdof_t2
+
+/usr/local/fsl/bin/fslmaths tdof_t2 -mas mask tdof_t2
+
+/usr/local/fsl/bin/fslmerge -t cope3  /home/jiaxinyu/SS2016/v509/2nd/101.gfeat/cope4.feat/stats/cope3 /home/jiaxinyu/SS2016/v509/2nd/102.gfeat/cope4.feat/stats/cope3 /home/jiaxinyu/SS2016/v509/2nd/103.gfeat/cope4.feat/stats/cope3 /home/jiaxinyu/SS2016/v509/2nd/104.gfeat/cope4.feat/stats/cope3 /home/jiaxinyu/SS2016/v509/2nd/105.gfeat/cope4.feat/stats/cope3 /home/jiaxinyu/SS2016/v509/2nd/106.gfeat/cope4.feat/stats/cope3 /home/jiaxinyu/SS2016/v509/2nd/107.gfeat/cope4.feat/stats/cope3 /home/jiaxinyu/SS2016/v509/2nd/108.gfeat/cope4.feat/stats/cope3 /home/jiaxinyu/SS2016/v509/2nd/109.gfeat/cope4.feat/stats/cope3 /home/jiaxinyu/SS2016/v509/2nd/110.gfeat/cope4.feat/stats/cope3 /home/jiaxinyu/SS2016/v509/2nd/111.gfeat/cope4.feat/stats/cope3 /home/jiaxinyu/SS2016/v509/2nd/112.gfeat/cope4.feat/stats/cope3 /home/jiaxinyu/SS2016/v509/2nd/113.gfeat/cope4.feat/stats/cope3 /home/jiaxinyu/SS2016/v509/2nd/114.gfeat/cope4.feat/stats/cope3 /home/jiaxinyu/SS2016/v509/2nd/201.gfeat/cope4.feat/stats/cope3 /home/jiaxinyu/SS2016/v509/2nd/202.gfeat/cope4.feat/stats/cope3 /home/jiaxinyu/SS2016/v509/2nd/203.gfeat/cope4.feat/stats/cope3 /home/jiaxinyu/SS2016/v509/2nd/204.gfeat/cope4.feat/stats/cope3 /home/jiaxinyu/SS2016/v509/2nd/205.gfeat/cope4.feat/stats/cope3 /home/jiaxinyu/SS2016/v509/2nd/206.gfeat/cope4.feat/stats/cope3 /home/jiaxinyu/SS2016/v509/2nd/207.gfeat/cope4.feat/stats/cope3 /home/jiaxinyu/SS2016/v509/2nd/208.gfeat/cope4.feat/stats/cope3 /home/jiaxinyu/SS2016/v509/2nd/209.gfeat/cope4.feat/stats/cope3 /home/jiaxinyu/SS2016/v509/2nd/210.gfeat/cope4.feat/stats/cope3
+
+/usr/local/fsl/bin/fslmaths cope3 -mas mask cope3
+
+printf '0.180220630555 ' >> design.lcon
+
+/usr/local/fsl/bin/fslmerge -t varcope3  /home/jiaxinyu/SS2016/v509/2nd/101.gfeat/cope4.feat/stats/varcope3 /home/jiaxinyu/SS2016/v509/2nd/102.gfeat/cope4.feat/stats/varcope3 /home/jiaxinyu/SS2016/v509/2nd/103.gfeat/cope4.feat/stats/varcope3 /home/jiaxinyu/SS2016/v509/2nd/104.gfeat/cope4.feat/stats/varcope3 /home/jiaxinyu/SS2016/v509/2nd/105.gfeat/cope4.feat/stats/varcope3 /home/jiaxinyu/SS2016/v509/2nd/106.gfeat/cope4.feat/stats/varcope3 /home/jiaxinyu/SS2016/v509/2nd/107.gfeat/cope4.feat/stats/varcope3 /home/jiaxinyu/SS2016/v509/2nd/108.gfeat/cope4.feat/stats/varcope3 /home/jiaxinyu/SS2016/v509/2nd/109.gfeat/cope4.feat/stats/varcope3 /home/jiaxinyu/SS2016/v509/2nd/110.gfeat/cope4.feat/stats/varcope3 /home/jiaxinyu/SS2016/v509/2nd/111.gfeat/cope4.feat/stats/varcope3 /home/jiaxinyu/SS2016/v509/2nd/112.gfeat/cope4.feat/stats/varcope3 /home/jiaxinyu/SS2016/v509/2nd/113.gfeat/cope4.feat/stats/varcope3 /home/jiaxinyu/SS2016/v509/2nd/114.gfeat/cope4.feat/stats/varcope3 /home/jiaxinyu/SS2016/v509/2nd/201.gfeat/cope4.feat/stats/varcope3 /home/jiaxinyu/SS2016/v509/2nd/202.gfeat/cope4.feat/stats/varcope3 /home/jiaxinyu/SS2016/v509/2nd/203.gfeat/cope4.feat/stats/varcope3 /home/jiaxinyu/SS2016/v509/2nd/204.gfeat/cope4.feat/stats/varcope3 /home/jiaxinyu/SS2016/v509/2nd/205.gfeat/cope4.feat/stats/varcope3 /home/jiaxinyu/SS2016/v509/2nd/206.gfeat/cope4.feat/stats/varcope3 /home/jiaxinyu/SS2016/v509/2nd/207.gfeat/cope4.feat/stats/varcope3 /home/jiaxinyu/SS2016/v509/2nd/208.gfeat/cope4.feat/stats/varcope3 /home/jiaxinyu/SS2016/v509/2nd/209.gfeat/cope4.feat/stats/varcope3 /home/jiaxinyu/SS2016/v509/2nd/210.gfeat/cope4.feat/stats/varcope3
+
+/usr/local/fsl/bin/fslmaths varcope3 -mas mask varcope3
+
+/usr/local/fsl/bin/fslmerge -t tdof_t3  /home/jiaxinyu/SS2016/v509/2nd/101.gfeat/cope4.feat/stats/tdof_t3 /home/jiaxinyu/SS2016/v509/2nd/102.gfeat/cope4.feat/stats/tdof_t3 /home/jiaxinyu/SS2016/v509/2nd/103.gfeat/cope4.feat/stats/tdof_t3 /home/jiaxinyu/SS2016/v509/2nd/104.gfeat/cope4.feat/stats/tdof_t3 /home/jiaxinyu/SS2016/v509/2nd/105.gfeat/cope4.feat/stats/tdof_t3 /home/jiaxinyu/SS2016/v509/2nd/106.gfeat/cope4.feat/stats/tdof_t3 /home/jiaxinyu/SS2016/v509/2nd/107.gfeat/cope4.feat/stats/tdof_t3 /home/jiaxinyu/SS2016/v509/2nd/108.gfeat/cope4.feat/stats/tdof_t3 /home/jiaxinyu/SS2016/v509/2nd/109.gfeat/cope4.feat/stats/tdof_t3 /home/jiaxinyu/SS2016/v509/2nd/110.gfeat/cope4.feat/stats/tdof_t3 /home/jiaxinyu/SS2016/v509/2nd/111.gfeat/cope4.feat/stats/tdof_t3 /home/jiaxinyu/SS2016/v509/2nd/112.gfeat/cope4.feat/stats/tdof_t3 /home/jiaxinyu/SS2016/v509/2nd/113.gfeat/cope4.feat/stats/tdof_t3 /home/jiaxinyu/SS2016/v509/2nd/114.gfeat/cope4.feat/stats/tdof_t3 /home/jiaxinyu/SS2016/v509/2nd/201.gfeat/cope4.feat/stats/tdof_t3 /home/jiaxinyu/SS2016/v509/2nd/202.gfeat/cope4.feat/stats/tdof_t3 /home/jiaxinyu/SS2016/v509/2nd/203.gfeat/cope4.feat/stats/tdof_t3 /home/jiaxinyu/SS2016/v509/2nd/204.gfeat/cope4.feat/stats/tdof_t3 /home/jiaxinyu/SS2016/v509/2nd/205.gfeat/cope4.feat/stats/tdof_t3 /home/jiaxinyu/SS2016/v509/2nd/206.gfeat/cope4.feat/stats/tdof_t3 /home/jiaxinyu/SS2016/v509/2nd/207.gfeat/cope4.feat/stats/tdof_t3 /home/jiaxinyu/SS2016/v509/2nd/208.gfeat/cope4.feat/stats/tdof_t3 /home/jiaxinyu/SS2016/v509/2nd/209.gfeat/cope4.feat/stats/tdof_t3 /home/jiaxinyu/SS2016/v509/2nd/210.gfeat/cope4.feat/stats/tdof_t3
+
+/usr/local/fsl/bin/fslmaths tdof_t3 -mas mask tdof_t3
+
+/usr/local/fsl/bin/fslmerge -t cope4  /home/jiaxinyu/SS2016/v509/2nd/101.gfeat/cope4.feat/stats/cope4 /home/jiaxinyu/SS2016/v509/2nd/102.gfeat/cope4.feat/stats/cope4 /home/jiaxinyu/SS2016/v509/2nd/103.gfeat/cope4.feat/stats/cope4 /home/jiaxinyu/SS2016/v509/2nd/104.gfeat/cope4.feat/stats/cope4 /home/jiaxinyu/SS2016/v509/2nd/105.gfeat/cope4.feat/stats/cope4 /home/jiaxinyu/SS2016/v509/2nd/106.gfeat/cope4.feat/stats/cope4 /home/jiaxinyu/SS2016/v509/2nd/107.gfeat/cope4.feat/stats/cope4 /home/jiaxinyu/SS2016/v509/2nd/108.gfeat/cope4.feat/stats/cope4 /home/jiaxinyu/SS2016/v509/2nd/109.gfeat/cope4.feat/stats/cope4 /home/jiaxinyu/SS2016/v509/2nd/110.gfeat/cope4.feat/stats/cope4 /home/jiaxinyu/SS2016/v509/2nd/111.gfeat/cope4.feat/stats/cope4 /home/jiaxinyu/SS2016/v509/2nd/112.gfeat/cope4.feat/stats/cope4 /home/jiaxinyu/SS2016/v509/2nd/113.gfeat/cope4.feat/stats/cope4 /home/jiaxinyu/SS2016/v509/2nd/114.gfeat/cope4.feat/stats/cope4 /home/jiaxinyu/SS2016/v509/2nd/201.gfeat/cope4.feat/stats/cope4 /home/jiaxinyu/SS2016/v509/2nd/202.gfeat/cope4.feat/stats/cope4 /home/jiaxinyu/SS2016/v509/2nd/203.gfeat/cope4.feat/stats/cope4 /home/jiaxinyu/SS2016/v509/2nd/204.gfeat/cope4.feat/stats/cope4 /home/jiaxinyu/SS2016/v509/2nd/205.gfeat/cope4.feat/stats/cope4 /home/jiaxinyu/SS2016/v509/2nd/206.gfeat/cope4.feat/stats/cope4 /home/jiaxinyu/SS2016/v509/2nd/207.gfeat/cope4.feat/stats/cope4 /home/jiaxinyu/SS2016/v509/2nd/208.gfeat/cope4.feat/stats/cope4 /home/jiaxinyu/SS2016/v509/2nd/209.gfeat/cope4.feat/stats/cope4 /home/jiaxinyu/SS2016/v509/2nd/210.gfeat/cope4.feat/stats/cope4
+
+/usr/local/fsl/bin/fslmaths cope4 -mas mask cope4
+
+printf '0.180220630555 ' >> design.lcon
+
+/usr/local/fsl/bin/fslmerge -t varcope4  /home/jiaxinyu/SS2016/v509/2nd/101.gfeat/cope4.feat/stats/varcope4 /home/jiaxinyu/SS2016/v509/2nd/102.gfeat/cope4.feat/stats/varcope4 /home/jiaxinyu/SS2016/v509/2nd/103.gfeat/cope4.feat/stats/varcope4 /home/jiaxinyu/SS2016/v509/2nd/104.gfeat/cope4.feat/stats/varcope4 /home/jiaxinyu/SS2016/v509/2nd/105.gfeat/cope4.feat/stats/varcope4 /home/jiaxinyu/SS2016/v509/2nd/106.gfeat/cope4.feat/stats/varcope4 /home/jiaxinyu/SS2016/v509/2nd/107.gfeat/cope4.feat/stats/varcope4 /home/jiaxinyu/SS2016/v509/2nd/108.gfeat/cope4.feat/stats/varcope4 /home/jiaxinyu/SS2016/v509/2nd/109.gfeat/cope4.feat/stats/varcope4 /home/jiaxinyu/SS2016/v509/2nd/110.gfeat/cope4.feat/stats/varcope4 /home/jiaxinyu/SS2016/v509/2nd/111.gfeat/cope4.feat/stats/varcope4 /home/jiaxinyu/SS2016/v509/2nd/112.gfeat/cope4.feat/stats/varcope4 /home/jiaxinyu/SS2016/v509/2nd/113.gfeat/cope4.feat/stats/varcope4 /home/jiaxinyu/SS2016/v509/2nd/114.gfeat/cope4.feat/stats/varcope4 /home/jiaxinyu/SS2016/v509/2nd/201.gfeat/cope4.feat/stats/varcope4 /home/jiaxinyu/SS2016/v509/2nd/202.gfeat/cope4.feat/stats/varcope4 /home/jiaxinyu/SS2016/v509/2nd/203.gfeat/cope4.feat/stats/varcope4 /home/jiaxinyu/SS2016/v509/2nd/204.gfeat/cope4.feat/stats/varcope4 /home/jiaxinyu/SS2016/v509/2nd/205.gfeat/cope4.feat/stats/varcope4 /home/jiaxinyu/SS2016/v509/2nd/206.gfeat/cope4.feat/stats/varcope4 /home/jiaxinyu/SS2016/v509/2nd/207.gfeat/cope4.feat/stats/varcope4 /home/jiaxinyu/SS2016/v509/2nd/208.gfeat/cope4.feat/stats/varcope4 /home/jiaxinyu/SS2016/v509/2nd/209.gfeat/cope4.feat/stats/varcope4 /home/jiaxinyu/SS2016/v509/2nd/210.gfeat/cope4.feat/stats/varcope4
+
+/usr/local/fsl/bin/fslmaths varcope4 -mas mask varcope4
+
+/usr/local/fsl/bin/fslmerge -t tdof_t4  /home/jiaxinyu/SS2016/v509/2nd/101.gfeat/cope4.feat/stats/tdof_t4 /home/jiaxinyu/SS2016/v509/2nd/102.gfeat/cope4.feat/stats/tdof_t4 /home/jiaxinyu/SS2016/v509/2nd/103.gfeat/cope4.feat/stats/tdof_t4 /home/jiaxinyu/SS2016/v509/2nd/104.gfeat/cope4.feat/stats/tdof_t4 /home/jiaxinyu/SS2016/v509/2nd/105.gfeat/cope4.feat/stats/tdof_t4 /home/jiaxinyu/SS2016/v509/2nd/106.gfeat/cope4.feat/stats/tdof_t4 /home/jiaxinyu/SS2016/v509/2nd/107.gfeat/cope4.feat/stats/tdof_t4 /home/jiaxinyu/SS2016/v509/2nd/108.gfeat/cope4.feat/stats/tdof_t4 /home/jiaxinyu/SS2016/v509/2nd/109.gfeat/cope4.feat/stats/tdof_t4 /home/jiaxinyu/SS2016/v509/2nd/110.gfeat/cope4.feat/stats/tdof_t4 /home/jiaxinyu/SS2016/v509/2nd/111.gfeat/cope4.feat/stats/tdof_t4 /home/jiaxinyu/SS2016/v509/2nd/112.gfeat/cope4.feat/stats/tdof_t4 /home/jiaxinyu/SS2016/v509/2nd/113.gfeat/cope4.feat/stats/tdof_t4 /home/jiaxinyu/SS2016/v509/2nd/114.gfeat/cope4.feat/stats/tdof_t4 /home/jiaxinyu/SS2016/v509/2nd/201.gfeat/cope4.feat/stats/tdof_t4 /home/jiaxinyu/SS2016/v509/2nd/202.gfeat/cope4.feat/stats/tdof_t4 /home/jiaxinyu/SS2016/v509/2nd/203.gfeat/cope4.feat/stats/tdof_t4 /home/jiaxinyu/SS2016/v509/2nd/204.gfeat/cope4.feat/stats/tdof_t4 /home/jiaxinyu/SS2016/v509/2nd/205.gfeat/cope4.feat/stats/tdof_t4 /home/jiaxinyu/SS2016/v509/2nd/206.gfeat/cope4.feat/stats/tdof_t4 /home/jiaxinyu/SS2016/v509/2nd/207.gfeat/cope4.feat/stats/tdof_t4 /home/jiaxinyu/SS2016/v509/2nd/208.gfeat/cope4.feat/stats/tdof_t4 /home/jiaxinyu/SS2016/v509/2nd/209.gfeat/cope4.feat/stats/tdof_t4 /home/jiaxinyu/SS2016/v509/2nd/210.gfeat/cope4.feat/stats/tdof_t4
+
+/usr/local/fsl/bin/fslmaths tdof_t4 -mas mask tdof_t4
+</pre><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></BODY></HTML>
